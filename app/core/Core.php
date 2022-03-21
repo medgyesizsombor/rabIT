@@ -2,8 +2,6 @@
 
 class Core {
     protected $currentController = 'HomeController';
-    protected $currentMethod = 'index';
-    protected $currentAction;
 
     public function __construct(){
         $url = $_SERVER['REQUEST_URI']; //get uri
