@@ -6,10 +6,11 @@ class Core {
     protected $currentAction;
 
     public function __construct(){
-        $url = $_SERVER['REQUEST_URI']; //get url
+        $url = $_SERVER['REQUEST_URI']; //get uri
         $url = rtrim($url, '/');        
         $url = explode('/', $url);  //split into an array
         //  http://localhost/rabIT/public/index -> [localhost, rabIt, public, index]
+        
         $file;
 
         /*
@@ -30,6 +31,7 @@ class Core {
             throw new Exception('The file: ' . $file . ' Does not exists.');
         }
 
+        //the selected controller will be the new controller and call its index method 
         $controller = new $currentController;
         $controller->index();
     }

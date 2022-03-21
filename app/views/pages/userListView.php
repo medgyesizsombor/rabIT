@@ -15,13 +15,13 @@
 <div class="container">
     <h1>In this page you can see all of the users</h1>
         <table>
-                <tr>
-                    <th>Name</th>
-                </tr>
-                <?php foreach ($this->view_data as $row) { ?>
-                <tr >
-                    <td> <?php echo $row[1]; ?></td>
-                </tr>
+            <tr>
+                <th>Name</th>
+            </tr>
+            <?php foreach ($this->view_data as $row) { ?>
+            <tr >
+                <td> <?php echo $row[1]; ?></td>
+            </tr>
             <?php } ?>
         </table>
 </div>

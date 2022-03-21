@@ -9,6 +9,7 @@ class View {
         $this->view_name = $view_name;
     }
 
+    //if the view exists import the new view 
     public function renderView($name){
         $file = '../app/views/' . $name . '.php';
         if(file_exists($file)){
@@ -16,6 +17,5 @@ class View {
         } else {
             throw new Exception('The view: ' . $file . 'Does not exists.');
         }
-        
     }
 }

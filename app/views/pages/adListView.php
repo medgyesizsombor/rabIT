@@ -19,7 +19,7 @@
                 <th>Advertisements</th>
                 <th>Users</th>
             </tr>
-        <?php foreach ($this->view_data as $row) { ?>
+            <?php foreach ($this->view_data as $row) { ?>
             <tr >
                 <td> <?php echo $row[1]; ?></td>
                 <td> <?php echo $row[0]; ?></td>

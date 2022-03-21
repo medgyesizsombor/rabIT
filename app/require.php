@@ -1,3 +1,4 @@
+<!-- require all the core files -->
 <?php
 require_once '../app/core/Core.php';
 require_once '../app/core/Controller.php';
